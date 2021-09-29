@@ -6,7 +6,7 @@ An attribute that we can use to determine if a transaction is forward starting.
 Broadly, if the start date > reporting date we consider it forward starting. Starting on the reporting date is not forward starting.
 We don't consider the time aspect because reporting date is not a point in time, but the whole 24hour period. In other words: [2021-09-29 23:19:00] == [2021-09-29 10:19:00]
 
-Edge cases to consider: These edge cases (like the EBA Q&A) typically come from practioners, vendors and firms (supervisors don't think of them).
+Edge cases to consider: 
 
 * What if no start date (like equities held?)
 * What if product ends on same day as it starts?
