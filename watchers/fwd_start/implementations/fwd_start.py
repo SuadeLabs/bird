@@ -3,13 +3,13 @@
 import csv
 
   
-def fwd_start(product, report):
-    if not report.date or not product.start_date:
+def fwd_start(product):
+    if not product.report_date or not product.start_date:
         return False
     
     else:
-        if product.start_date > report.date:
-            if product.trade_date < report.date:
+        if product.start_date > product.report_date:
+            if product.trade_date < product.report_date:
                 return True
             else:
                 return False
