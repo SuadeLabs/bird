@@ -1,0 +1,8 @@
+fwd_start, start date, report date, end date, trade date, description
+FALSE, 29/09/21, 01/10/21, -, -, primary example
+FALSE, 01/10/21, 01/10/21, -, -, primary example
+TRUE, 04/10/21, 01/10/21, -, -, primary example
+FALSE, -, 01/10/21, -, -, no start date (like equities held?)
+TRUE, 29/09/21, 01/10/21, 29/09/21, -, product ends on same day as it starts
+FALSE, 03/10/21, 01/10/21, -, 01/10/21, products traded before the reporting date but starting after for technical reasons
+FALSE, 02/10/21, 01/10/21, -, 01/10/21, start date is weekend
