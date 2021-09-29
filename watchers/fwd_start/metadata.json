@@ -1,0 +1,6 @@
+{
+    "EIL_target_attribute": "fwd_start",
+    "type": "boolean",
+    "IL_dependent_attributes": ["report_date", "start_date", "trade_date", "end_date"],
+    "reg_reference": "https://www.eba.europa.eu/documents/10180/2751085/Annex+VI+%28Annex+25+%28LCR%29%29.pdf"
+}
