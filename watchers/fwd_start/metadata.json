@@ -4,19 +4,25 @@
     "IL_dependent_attributes": ["report_date", "start_date", "trade_date", "end_date"],
     "reg_reference": "https://www.eba.europa.eu/documents/10180/2751085/Annex+VI+%28Annex+25+%28LCR%29%29.pdf",
     "derivation": [
-        {
+        {   
+            "id": 1,
             "description": "Check that start_date exists",
-            "IL_dependent_attributes": ["start_date"]
+            "IL_dependent_attributes": ["start_date"],
+            "goto": 2
         },
         
         {
+            "id": 2,
             "description": "Check that report_date exists",
-            "IL_dependent_attributes": ["report_date"]
+            "IL_dependent_attributes": ["report_date"],
+            "goto": 2
         },
        
         {
+            "id": 3,
             "description": "Compare start_date and report_date",
-            "IL_dependent_attributes": ["start_date", "report_date"]
+            "IL_dependent_attributes": ["start_date", "report_date"],
+            "goto": null
         }
     ]
 }
